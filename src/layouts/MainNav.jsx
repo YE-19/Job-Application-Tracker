@@ -20,35 +20,53 @@ const MainNav = () => {
 
       <div className={`${isOpen ? "flex" : "hidden"} md:flex flex-col md:flex-row items-center gap-8 absolute md:static top-[72px] left-0 w-full md:w-auto bg-sec md:bg-transparent pb-8 md:pb-0 transition-all duration-300 ease-in-out`}>
         <nav className="flex flex-col md:flex-row text-white gap-8 items-center">
-            <NavLink to='/' className='nav-t'> Home</NavLink>
-            <NavLink to='/About' className='nav-t'> About</NavLink>
-            <NavLink to='/jobviewer' className='nav-t'> Job viewer</NavLink>
-
+            <NavLink 
+                to='/' 
+                className='nav-t' 
+                onClick={() => setIsOpen(false)}
+            > 
+                Home
+            </NavLink>
+            
+            <NavLink 
+                to='/About' 
+                className='nav-t' 
+                onClick={() => setIsOpen(false)}
+            > 
+                About
+            </NavLink>
+            
+            <NavLink 
+                to='/jobviewer' 
+                className='nav-t' 
+                onClick={() => setIsOpen(false)}
+            > 
+                Job viewer
+            </NavLink>
         </nav>
       </div>
 
-<button
-  onClick={() => navigate("/logout")}
-  className={`text-[16px] text-white hover:bg-[#0e898e] p-4 rounded-[24px] hover:scale-110 bg-[#172627] hover:text-red-600 hover:font-semibold transition-all ease-in duration-300 ${token ? "block" : "hidden"}`}
->
-  Logout
-</button>
+      <button
+        onClick={() => navigate("/logout")}
+        className={`text-[16px] text-white hover:bg-[#0e898e] p-4 rounded-[24px] hover:scale-110 bg-[#172627] hover:text-red-600 hover:font-semibold transition-all ease-in duration-300 ${token ? "block" : "hidden"}`}
+      >
+        Logout
+      </button>
 
-
-<div className={`gap-4 ${!token ? "flex" : "hidden"}`}>
-  <button
-    onClick={() => navigate("/signin")}
-    className="text-[16px] text-white hover:bg-[#0e898e] p-4 rounded-[24px] hover:scale-110 bg-[#172627] hover:text-[#172627] hover:font-semibold transition-all ease-in duration-300"
-  >
-    Sign In
-  </button>
-  <button
-    onClick={() => navigate("/signup")}
-    className="text-[16px] text-white hover:bg-[#0e898e] p-4 rounded-[24px] hover:scale-110 bg-[#172627] hover:text-[#172627] hover:font-semibold transition-all ease-in duration-300"
-  >
-    Sign Up
-  </button>
-</div>
+      <div className={`gap-4 ${!token ? "flex" : "hidden"}`}>
+        <button
+          onClick={() => navigate("/signin")}
+          className="text-[16px] text-white hover:bg-[#0e898e] p-4 rounded-[24px] hover:scale-110 bg-[#172627] hover:text-[#172627] hover:font-semibold transition-all ease-in duration-300"
+        >
+          Sign In
+        </button>
+        <button
+          onClick={() => navigate("/signup")}
+          className="text-[16px] text-white hover:bg-[#0e898e] p-4 rounded-[24px] hover:scale-110 bg-[#172627] hover:text-[#172627] hover:font-semibold transition-all ease-in duration-300"
+        >
+          Sign Up
+        </button>
+      </div>
     </div>
   )
 }
