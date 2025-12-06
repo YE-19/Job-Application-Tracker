@@ -130,10 +130,11 @@ service cloud.firestore {
 
 ## 👤 Author
 
-**Youssef Ihab Ali**
+**Youssef Ehab Aly**
 
 - LinkedIn: [Youssef Ehab](https://www.linkedin.com/in/youssef-ehab-ye19/)
 - GitHub: [YE-19](https://github.com/YE-19)
+- Live Demo: [Job Application Tracker](https://job-application-tracker-silk-iota.vercel.app/)
 
 ---
 
