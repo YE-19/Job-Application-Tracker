@@ -132,7 +132,7 @@ service cloud.firestore {
 
 **Youssef Ihab Ali**
 
-- LinkedIn: [Youssef Ehab](https://www.linkedin.com/in/youssef-ihab-ali-1335b3236/)
+- LinkedIn: [Youssef Ehab](www.linkedin.com/in/youssef-ehab-ye19)
 - GitHub: [YE-19](https://github.com/YE-19)
 
 ---
